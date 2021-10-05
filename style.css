@@ -1,3 +1,8 @@
+
+
+        /* Page Styling */
+
+
 ::-moz-selection { 
     background: thistle;
     color: white;        
@@ -15,32 +20,35 @@
          url("fonts/ABCGalapagosC-Regular-Trial.woff") format("woff");
   }
 
-@font-face {
-    font-family: "Common Serif";
-    src: url("fonts/CommonSerifLoBeta7-Regular.otf") format("otf");
-  }
-
   
-* {
+body {
 
     background-color: Snow;
 
 }
 
+
+
+
+        /* Text Styling */
+
+
 .title {
-font-family: "ABCGalapagos-C-Regular", sans-serif;
-font-size: 32px;
-line-height: 1.15em;
-color: #000;
+	font-family: "ABCGalapagos-C-Regular", sans-serif;
+	font-size: 26px;
+	line-height: 1.15em;
+	color: #000;
 
 }
 
 .container {
 
     font-family: Arial, sans-serif;
-    font-size: 32px;
-    line-height: 1.15em;
+    font-size: 26px;
+    line-height: 1.35em;
     color: #000;
+    z-index: 3;
+    position: relative;
 
 
     -webkit-column-count: 3;
@@ -56,50 +64,103 @@ color: #000;
             margin-top: 2vh;
  }
 
- @media only screen and (max-width: 900px) {
-    /* For Mobile: */
-.container {
 
-            font-family: Arial, sans-serif;
-            font-size: 32px;
-            line-height: 1.15em;
-            color: #000;
-        
-        
-            -webkit-column-count: 1;
-               -moz-column-count: 1;
-                    column-count: 1;
-         
-            -webkit-column-gap: 20px;
-               -moz-column-gap: 20px;
-                    column-gap: 20px;
-        
-                    margin-right: 2vw;
-                    margin-left: 2vw;
-                    margin-top: 2vh;
-         }
-    
-  }
+
+
+
+        /* Shapes  */
+
+ .shape{
+ 	max-width:1em;
+ 	max-height:1em;
+ 	padding-left:3px;
+ 	padding-right:2px;
+ }
+
+  .shapeUpper{
+ 
+ 	z-index: 1;
+
+    margin-right: 38vw;
+    margin-left: 38vw;
+    margin-top: 10vh;
+
+    position: absolute;
+
+ }
+
+   .shapeLower{
+
+ 	z-index: 5;
+
+ 	margin-right: 70vw;
+    margin-left: 20vw;
+    margin-top: 50vh;
+
+    position: absolute;
+
+ }
+
+.shapeLower2{
+
+ 	z-index: 2;
+
+ 	margin-right: 10vw;
+    margin-left: 70vw;
+    margin-top: 70vh;
+
+    position: absolute;
+
+ }
+
+
+        /* Links */
+
+a {
+    font-family: Arial, sans-serif;
+    font-size: 26px;
+    line-height: 1.15em;
+    color: #000;
+    text-decoration: underline dotted;
+    text-underline-offset: 4px;
+}
+
+a:hover {
+    font-family: Arial, sans-serif;
+    font-size: 26px;
+    line-height: 1.15em;
+    color: #000;
+    text-decoration: none;
+    text-underline-offset: 7px;
+}
+
+
+
+
+
+        /* Submission Form */
 
 .submissions {
 
     position: relative;
     font-family: Arial, sans-serif;
-    font-size: 32px;
+    font-size: 26px;
     line-height: 1.15em;
     color: #000;
+    z-index: 4;
 
 
 
-            margin-right: 2vw;
-            margin-left: 2vw;
-            margin-top: 2em;
+    margin-right: 2vw;
+    margin-left: 2vw;
+    margin-top: 8em;
+    margin-bottom: 3em;
  }
 
  input {
 
     font-family: Arial, sans-serif;
-    font-size: 32px;
+    font-size: 26px;
     line-height: 1.15em;
     color: #000;
     border:none;
@@ -123,7 +184,7 @@ input:focus {
 
  select {
         font-family: Arial, sans-serif;
-        font-size: 32px;
+        font-size: 26px;
         line-height: 1.15em;
         color: #000;
         text-decoration: underline;
@@ -152,7 +213,7 @@ select:focus {
 
 input[type=submit] {
     font-family: Arial, sans-serif;
-    font-size: 32px;
+    font-size: 26px;
     line-height: 1.15em;
     color: #000;
     background-color:#fff;
@@ -171,7 +232,7 @@ input[type=submit] {
 
 input[type=submit]:hover {
     font-family: Arial, sans-serif;
-    font-size: 32px;
+    font-size: 26px;
     line-height: 1.15em;
     color: #fff;
     background-color:#000;
@@ -187,3 +248,71 @@ input[type=submit]:hover {
     padding-left:10px;
      }
     
+
+
+
+
+
+
+
+        /* For Mobile: */
+
+ @media only screen and (max-width: 900px) {
+.container {
+
+            font-family: Arial, sans-serif;
+            font-size: 26px;
+            line-height: 1.35em;
+            color: #000;
+        
+        
+            -webkit-column-count: 1;
+               -moz-column-count: 1;
+                    column-count: 1;
+         
+            -webkit-column-gap: 20px;
+               -moz-column-gap: 20px;
+                    column-gap: 20px;
+        
+                    margin-right: 2vw;
+                    margin-left: 2vw;
+                    margin-top: 2vh;
+         }
+
+.shapeUpper{
+ 
+ 	z-index: 1;
+
+    margin-right: 5vw;
+    margin-left: 5vw;
+    margin-top: 0em;
+
+    position: absolute;
+
+ }
+
+.shapeLower{
+
+ 	z-index: 1;
+
+ 	margin-right: 5vw;
+    margin-left: 5vw;
+    margin-top: 30em;
+
+    position: absolute;
+
+ }
+
+ .shapeLower2{
+
+ 	z-index: 2;
+
+ 	margin-right: 5vw;
+    margin-left: 5vw;
+    margin-top: 80em;
+
+    position: absolute;
+
+ }
+    
+  }

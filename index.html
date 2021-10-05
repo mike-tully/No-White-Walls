@@ -12,20 +12,35 @@
   <link rel="stylesheet" type="text/css" href="style.css">
   <script src="https://unpkg.com/jquery@3.3.1/dist/jquery.min.js"></script>
 
-
-
 </head>
+
+
 
 <body>
 
+<!--Random Image
+<div id="randImage"></div>
+--> 
+
+
+	<img class="shapeUpper" src="assets/shapes/shape-8.svg" alt="no white walls" fill-opacity="0">
+	<img class="shapeLower" src="assets/shapes/shape-44.svg" alt="no white walls" fill-opacity="0">
+	<img class="shapeLower2" src="assets/shapes/shape-31.svg" alt="no white walls" fill-opacity="0">
+
+
+
 
     <div class="container">
-        <span class="title">no white walls: decolonizing through interdependency</span> is the inaugural Yale School of Art Annual exhibition curated by graduate students: Salvador Andrade, Zoila Coc-Chang, Miguel Gaydosh, athena quispe, Mike Tully, and Amartya De. This exhibition seeks to challenge the established history of the exhibition space in Western museums and galleries—a history dominated by the white cube formula. Therefore the exhibition will focus on artworks that stand free from the walls and incorporate sonic, tactile, and/or olfactory elements. Drawing from the lineage of <span class="title">Rasquache art, the Tropicalia movement, conceptualizations of Auto-construccion, and other decolonial approaches to art making,</span> this exhibition will attempt to disrupt the legacy of an educational model influenced by the commercial expectations facing MFA students today. The curators of the exhibition aim to identify, engage, and uplift <span class="title">MFA practitioners</span> within the Tri-State area (CT, NY, NJ) that are not solely invested in producing objects intended for a particular market or economic exchange. Through this refusal to engage in a market that capitalizes on the exploitation of MFA students, the exhibition will provide <span class="title">an alternative and temporary platform to practitioners</span> that move beyond established forms of knowledge keeping and distribution. 
+        <span class="title">no white walls: decolonizing through interdependency</span> is the inaugural Yale School of Art Annual exhibition curated by graduate students: Salvador Andrade, Zoila Coc-Chang, Miguel Gaydosh, athena quispe, Mike Tully, and Amartya De<img class="shape" src="assets/shapes/shape-1.svg" alt="no white walls"> This exhibition seeks to challenge the established history of the exhibition space in Western museums and galleries—a history dominated by the white cube formula<img class="shape" src="assets/shapes/shape-20.svg" alt="no white walls"> Therefore the exhibition will focus on artworks that stand free from the walls and incorporate sonic, tactile, and/or olfactory elements<img class="shape" src="assets/shapes/shape-2.svg" alt="no white walls"> Drawing from the lineage of <span class="title">Rasquache art, the Tropicalia movement, conceptualizations of Auto-construccion, and other decolonial approaches to art making,</span> this exhibition will attempt to disrupt the legacy of an educational model influenced by the commercial expectations facing MFA students today<img class="shape" src="assets/shapes/shape-3.svg" alt="no white walls"> The curators of the exhibition aim to identify, engage, and uplift <span class="title">MFA students</span> within the New England area that are not solely invested in producing objects intended for a particular market or economic exchange<img class="shape" src="assets/shapes/shape-10.svg" alt="no white walls"> Through this refusal to engage in a market that capitalizes on the exploitation of MFA students, the exhibition will provide <span class="title">an alternative and temporary platform to practitioners</span> that move beyond established forms of knowledge keeping and distribution<img class="shape" src="assets/shapes/shape-28.svg" alt="no white walls"> 
     </div>
 
 
   <div class="submissions">
     <span class="title">Submissions</span><br><br>
+   	If you are interested in submitting your work for consideration, please fill out the submission form <a href="https://forms.gle/hwb2M7sY3d9spCrJ7" target="_blank">here</a>
+
+
+<!--Designed Form
     <form id="submissionForm" name="submission-form">
       
       <input type="text" id="fullname" name="fullname" value="Full Name"><br>
@@ -44,8 +59,22 @@
 
 
       <input type="submit" value="Submit">
+  -->
+
   </div>
 
+
+<!--Don't forget Jquery-->
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js'></script>
+
+<!--New images on load -->
+<script>
+//Add your images, we'll set the path in the next step
+    var images = ['assets/shapes/shape-1.svg', 'assets/shapes/shape-2.svg', 'assets/shapes/shape-3.svg', 'assets/shapes/shape-4.svg', 'assets/shapes/shape-5.svg', 'assets/shapes/shape-6.svg', 'assets/shapes/shape-7.svg', 'assets/shapes/shape-8.svg', 'assets/shapes/shape-9.svg', 'assets/shapes/shape-10.svg', 'assets/shapes/shape-11.svg', 'assets/shapes/shape-12.svg', 'assets/shapes/shape-13.svg', 'assets/shapes/shape-14.svg', 'assets/shapes/shape-15.svg', 'assets/shapes/shape-16.svg'];
+    
+//Build the img, then do a bit of maths to randomize load and append to a div. Add a touch off css to fade them badboys in all sexy like.
+    $('<img class="shape" src="assets/shapes/' + images[Math.floor(Math.random() * images.length)] + '">').appendTo('#randImage');
+</script>
 
 
 </body>
