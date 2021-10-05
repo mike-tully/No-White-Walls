@@ -258,10 +258,19 @@ input[type=submit]:hover {
         /* For Mobile: */
 
  @media only screen and (max-width: 900px) {
+
+.title {
+	font-family: "ABCGalapagos-C-Regular", sans-serif;
+	font-size: 22px;
+	line-height: 1.15em;
+	color: #000;
+
+}
+
 .container {
 
             font-family: Arial, sans-serif;
-            font-size: 26px;
+            font-size: 22px;
             line-height: 1.35em;
             color: #000;
         
