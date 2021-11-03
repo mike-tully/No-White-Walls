@@ -7,20 +7,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <title>No White Walls</title>
-  <meta name="description" content="No White Walls">
+  <meta name="description" content="no white walls: an exhibition at the Yale School of Art, Spring 2022.">
 
   <link rel="stylesheet" type="text/css" href="style.css">
-  <script src="https://unpkg.com/jquery@3.3.1/dist/jquery.min.js"></script>
 
 </head>
 
 
 
 <body>
-
-<!--Random Image
-<div id="randImage"></div>
---> 
 
 
 	<img class="shapeUpper" src="assets/shapes/shape-8.svg" alt="no white walls" fill-opacity="0">
@@ -39,19 +34,6 @@
     <span class="title">Submissions</span><br><br>
    	To submit your artwork for consideration, please fill out the submission form <a href="https://forms.gle/aCFHXjUFM8Sqcra49" target="_blank">here</a>
   </div>
-
-
-<!--Don't forget Jquery-->
-<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js'></script>
-
-<!--New images on load -->
-<script>
-//Add your images, we'll set the path in the next step
-    var images = ['assets/shapes/shape-1.svg', 'assets/shapes/shape-2.svg', 'assets/shapes/shape-3.svg', 'assets/shapes/shape-4.svg', 'assets/shapes/shape-5.svg', 'assets/shapes/shape-6.svg', 'assets/shapes/shape-7.svg', 'assets/shapes/shape-8.svg', 'assets/shapes/shape-9.svg', 'assets/shapes/shape-10.svg', 'assets/shapes/shape-11.svg', 'assets/shapes/shape-12.svg', 'assets/shapes/shape-13.svg', 'assets/shapes/shape-14.svg', 'assets/shapes/shape-15.svg', 'assets/shapes/shape-16.svg'];
-    
-//Build the img, then do a bit of maths to randomize load and append to a div. Add a touch off css to fade them badboys in all sexy like.
-    $('<img class="shape" src="assets/shapes/' + images[Math.floor(Math.random() * images.length)] + '">').appendTo('#randImage');
-</script>
 
 
 </body>
