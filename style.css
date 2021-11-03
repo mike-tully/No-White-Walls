@@ -121,7 +121,7 @@ a {
     font-size: 26px;
     line-height: 1.15em;
     color: #000;
-    text-decoration: underline dotted;
+    text-decoration: underline solid;
     text-underline-offset: 4px;
 }
 
@@ -304,6 +304,7 @@ input[type=submit]:hover {
     margin-bottom: 3em;
     }
 
+
 .shapeUpper{
  
  	z-index: 1;
@@ -346,7 +347,7 @@ a {
     font-size: 22px;
     line-height: 1.15em;
     color: #000;
-    text-decoration: underline dotted;
+    text-decoration: underline solid;
     text-underline-offset: 4px;
 }
 
