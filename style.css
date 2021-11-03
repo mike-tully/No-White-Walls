@@ -20,6 +20,11 @@
          url("fonts/ABCGalapagosC-Regular-Trial.woff") format("woff");
   }
 
+@font-face {
+    font-family: "Arial Together";
+    src: url("fonts/ArialTogether.woff") format("woff");
+}
+
   
 body {
 
@@ -34,7 +39,7 @@ body {
 
 
 .title {
-	font-family: Arial, sans-serif;
+	font-family: "Arial Together", sans-serif;
 	font-size: 26px;
 	line-height: 1.15em;
 	color: #000;
@@ -259,7 +264,7 @@ input[type=submit]:hover {
  @media only screen and (max-width: 900px) {
 
 .title {
-	font-family: Arial, sans-serif;
+	font-family: "Arial Together", sans-serif;
 	font-size: 22px;
 	line-height: 1.15em;
 	color: #000;
