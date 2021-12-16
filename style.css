@@ -4,13 +4,14 @@
 
 
 ::-moz-selection { 
-    background: thistle;
-    color: white;        
+    background: #000000;
+    color: snow;        
   }
 
 ::selection { 
-    background: thistle;
-    color: white;
+    background: #000000;
+    color: snow;
+
  }
 
 
@@ -26,10 +27,13 @@
 }
 
   
-body {
-
-    background-color: Snow;
-
+html, body {
+    font-size: 24px;
+    background-color: #ffe900;
+    color: #383838;
+    line-height: 1.35em;
+    background-size: cover;
+    margin:0;
 }
 
 
@@ -40,18 +44,41 @@ body {
 
 .title {
 	font-family: "Arial Together", sans-serif;
-	font-size: 26px;
-	line-height: 1.15em;
-	color: #000;
-
+    font-size:24px;
 }
+
+.caption {
+	font-family: "Arial", sans-serif;
+    font-size:12px;
+    color: #383838;
+}
+
+
+        /* Links */
+
+a {
+            font-family: Arial, sans-serif;
+            text-decoration: underline solid;
+            color: #383838;
+            text-underline-offset: 4px;
+        }
+        
+a:hover {
+            font-family: Arial, sans-serif;
+            text-decoration: none;
+            color: #383838;
+        }
+
+
+
+
+        /* DIVs */
+
 
 .container {
 
     font-family: Arial, sans-serif;
-    font-size: 26px;
-    line-height: 1.35em;
-    color: #000;
+
     z-index: 3;
     position: relative;
 
@@ -69,6 +96,63 @@ body {
             margin-top: 2vh;
  }
 
+
+.submissions {
+
+    position: relative;
+    font-family: Arial, sans-serif;
+    z-index: 4;
+
+    margin-right: 2vw;
+    margin-left: 2vw;
+    margin-top: 5em;
+    margin-bottom: 3em;
+ }
+
+
+ .team {
+
+    position: relative;
+    font-family: Arial, sans-serif;
+    z-index: 4;
+
+    margin-right: 2vw;
+    margin-left: 2vw;
+    margin-top: 5em;
+    margin-bottom: 3em;
+ }
+
+
+ .gallery {
+
+    position: relative;
+    font-family: Arial, sans-serif;
+    z-index: 4;
+
+    margin-right: 2vw;
+    margin-left: 2vw;
+    margin-top: 5em;
+    margin-bottom: 0em;
+ }
+
+ .galleryImage {
+
+    position: absolute;
+    display: block;
+    margin:0;
+    height: auto;
+    left: 0;
+    width: 100%;
+ }
+
+ .galleryImage img {
+
+    position: relative;
+    margin:0;
+    display: block;
+    width:100%; height:100%;
+    object-fit: cover;
+ }
 
 
 
@@ -94,164 +178,32 @@ body {
 
  }
 
-   .shapeLower{
+.shapeLowerLeft{
 
- 	z-index: 5;
+ 	z-index: 2;
 
- 	margin-right: 70vw;
-    margin-left: 20vw;
-    margin-top: 50vh;
+ 	margin-right: 64vw;
+    margin-left: 18vw;
+    margin-top: 65vh;
 
     position: absolute;
 
  }
 
-.shapeLower2{
+.shapeLowerRight{
 
  	z-index: 2;
 
  	margin-right: 10vw;
     margin-left: 70vw;
-    margin-top: 70vh;
+    margin-top: 75vh;
 
     position: absolute;
 
  }
 
 
-        /* Links */
 
-a {
-    font-family: Arial, sans-serif;
-    font-size: 26px;
-    line-height: 1.15em;
-    color: #000;
-    text-decoration: underline solid;
-    text-underline-offset: 4px;
-}
-
-a:hover {
-    font-family: Arial, sans-serif;
-    font-size: 26px;
-    line-height: 1.15em;
-    color: #000;
-    text-decoration: none;
-}
-
-
-
-
-
-        /* Submission Form */
-
-.submissions {
-
-    position: relative;
-    font-family: Arial, sans-serif;
-    font-size: 26px;
-    line-height: 1.15em;
-    color: #000;
-    z-index: 4;
-
-
-
-    margin-right: 2vw;
-    margin-left: 2vw;
-    margin-top: 8em;
-    margin-bottom: 3em;
- }
-
- input {
-
-    font-family: Arial, sans-serif;
-    font-size: 26px;
-    line-height: 1.15em;
-    color: #000;
-    border:none;
-
-    width: 20em;
-    max-width: 100%;
-    height: 1.5em;
-    margin-bottom:.75em;
-    padding-left:10px;
-    text-decoration: underline;
-    text-underline-offset: 7px;
-    
-
-  }
-
-input:focus {
-        outline: none;
-    }
-
-
-
- select {
-        font-family: Arial, sans-serif;
-        font-size: 26px;
-        line-height: 1.15em;
-        color: #000;
-        text-decoration: underline;
-        text-underline-offset: 7px;
-
-        width: 20em;
-        max-width: 100%;
-        height: 1.5em;
-        margin-bottom:.75em;
-        padding-left:10px;
-        border: none;
-        border-radius: 0;
-
-        appearance: none;
-        -webkit-appearance: none;
-        -moz-appearance: none;
-
-    }
-
-select:focus {
-    outline: none;
-    text-decoration: underline;
-    text-underline-offset: 7px;
-    }
-
-
-input[type=submit] {
-    font-family: Arial, sans-serif;
-    font-size: 26px;
-    line-height: 1.15em;
-    color: #000;
-    background-color:#fff;
-    text-align:left;
-    border:2px #000 solid;
-    transition: 0.3s;
-    text-decoration:none;
-
-    width: 10em;
-    max-width: 100%;
-    height: 1.5em;
-    margin-bottom:.75em;
-    padding-top:5px;
-    padding-left:10px;
-     }
-
-input[type=submit]:hover {
-    font-family: Arial, sans-serif;
-    font-size: 26px;
-    line-height: 1.15em;
-    color: #fff;
-    background-color:#000;
-    border:2px #000 solid;
-    text-align:left;
-    text-decoration:none;
-
-    width: 10em;
-    max-width: 100%;
-    height: 1.5em;
-    margin-bottom:.75em;
-    padding-top:5px;
-    padding-left:10px;
-     }
-    
 
 
 
@@ -263,20 +215,48 @@ input[type=submit]:hover {
 
  @media only screen and (max-width: 900px) {
 
+body {
+        font-size: 22px;
+        background-color: #ffe900;
+        color: #383838;
+        line-height: 1.35em;
+    }
+
 .title {
 	font-family: "Arial Together", sans-serif;
 	font-size: 22px;
 	line-height: 1.15em;
-	color: #000;
-
+    color: #383838;
 }
+
+.caption {
+	font-family: "Arial", sans-serif;
+	font-size: 12px;
+	line-height: 1.15em;
+    color: #383838;
+}
+
+
+
+
+a {
+    font-family: Arial, sans-serif;
+    text-decoration: underline solid;
+    text-underline-offset: 4px;
+}
+
+a:hover {
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+}
+
+
+
 
 .container {
 
     font-family: Arial, sans-serif;
-    font-size: 22px;
-    line-height: 1.35em;
-    color: #000;
+
 
 
     -webkit-column-count: 1;
@@ -296,18 +276,29 @@ input[type=submit]:hover {
 
     position: relative;
     font-family: Arial, sans-serif;
-    font-size: 22px;
-    line-height: 1.15em;
-    color: #000;
     z-index: 4;
-
-
 
     margin-right: 2vw;
     margin-left: 2vw;
-    margin-top: 8em;
+    margin-top: 4em;
     margin-bottom: 3em;
     }
+
+
+.team {
+
+        position: relative;
+        font-family: Arial, sans-serif;
+        z-index: 4;
+    
+        margin-right: 2vw;
+        margin-left: 2vw;
+        margin-top: 4em;
+     }
+    
+    
+
+
 
 
 .shapeUpper{
@@ -322,7 +313,7 @@ input[type=submit]:hover {
 
  }
 
-.shapeLower{
+.shapeLowerLeft{
 
  	z-index: 1;
 
@@ -334,35 +325,15 @@ input[type=submit]:hover {
 
  }
 
- .shapeLower2{
+ .shapeLowerRight{
 
  	z-index: 2;
 
  	margin-right: 5vw;
     margin-left: 5vw;
-    margin-top: 80em;
+    margin-top: 60em;
 
     position: absolute;
 
  }
-    
-
-a {
-    font-family: Arial, sans-serif;
-    font-size: 22px;
-    line-height: 1.15em;
-    color: #000;
-    text-decoration: underline solid;
-    text-underline-offset: 4px;
 }
-
-a:hover {
-    font-family: Arial, sans-serif;
-    font-size: 22px;
-    line-height: 1.15em;
-    color: #000;
-    text-decoration: none;
-}
-
-
-  }
